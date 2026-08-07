@@ -40,8 +40,8 @@ def generate_page_recursive(from_path: str, template_path: str, dest_path: str, 
 def main():
     basepath: str = "/"
     if len(sys.argv) > 1 and sys.argv[1] is not None:
-        basepath = sys.argv[1]
-    print(basepath)
+        basepath = sys.argv[1] + "/"
+
     if os.path.exists(dir_path_public):
         shutil.rmtree(dir_path_public)
 
